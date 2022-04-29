@@ -34,10 +34,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Hot</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    .detail-container {
+        border: 1px solid #999;
+        padding: 30px;
+        width: 500px;
+        margin: 5rem auto;
+    }
+    </style>
 </head>
 
 <body>
-    <?php  include('./template/header.php'); ?>
+    <?php  include('./template/header.php'); ?>;
     <div class="container text-center detail-container">
         <?php if($pizza): ?>
         <h2>Your Order:</h2>

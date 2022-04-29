@@ -31,6 +31,10 @@
             <div class="header-hide">
                 <i class="fa-solid fa-bars bar" id="bar"></i>
             </div>
+            <div class="header-register">
+                <a href="register.php" class="text-decoration-none  text-muted header text-capitalize"
+                    style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Register</a>
+            </div>
         </div>
     </header>
 </body>

@@ -69,9 +69,9 @@
     <!-- Order State -->
     <h1 class="text-uppercase text-center black-text my-5" data-aos="fade-down-right">-- Pizzas! --</h1>
     <div class="container">
-        <div class="row bg-light p-5">
+        <div class="row bg-light pt-2 pb-4 px-4">
             <?php foreach($pizzas as $pizza) :?>
-            <div class="col-md-6">
+            <div class="col-md-4 mt-5">
                 <div class="card">
                     <img src="./images/pizza.svg" alt="" class="pizza-image">
                     <div class="card-body text-center p-4">

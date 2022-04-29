@@ -7,14 +7,15 @@
 html {
   scroll-behavior: smooth;
 }
-/* ! Detail */
-.detail-container {
+/* ! register.php */
+.register-form {
+  margin: 6rem auto;
+  max-width: 560px;
+  padding: 20px;
   border: 1px solid #999;
-  padding: 30px;
-  width: 500px;
-  margin: 30px auto;
 }
-/* !  Index */
+/* ! detail.php */
+/* !  index.php */
 .pizza-image {
   width: 100px;
   position: relative;
