@@ -20,21 +20,25 @@
             <a href="index.php" class="text-decoration-none  text-muted header-left d-flex align-items-center "
                 style="font-size:25px">
                 <img src="./images/pizza-logo.png" alt="" style="width:60px" name="header-image"> <span
-                    class="ml-2">Pizza</span>
+                    class="">Pizza</span>
             </a>
             <div class="header-right" id="nav">
                 <a href="add.php" class="text-decoration-none  text-muted text-capitalize p">add pizza</a>
                 <a href="#our-menu" class="text-decoration-none  text-muted header text-capitalize">Menu</a>
                 <a href="#blog" class="text-decoration-none  text-muted header text-capitalize">Blog</a>
                 <a href="#review-title" class="text-decoration-none  text-muted header text-capitalize">Review</a>
+                <a href="register.php" class="text-decoration-none text-muted header text-capitalize"
+                    style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Register</a>
+                <a href="login.php" class="text-decoration-none text-muted header text-capitalize"
+                    style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a>
             </div>
-            <div class="header-hide">
+            <div class=" header-hide">
                 <i class="fa-solid fa-bars bar" id="bar"></i>
             </div>
-            <div class="header-register">
+            <!-- <div class="header-register">
                 <a href="register.php" class="text-decoration-none  text-muted header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Register</a>
-            </div>
+            </div> -->
         </div>
     </header>
 </body>
