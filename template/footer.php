@@ -84,8 +84,8 @@
     </footer>
     <!-- copyright -->
     <div class="text-center p-3 bg-light" style="border-top:1px solid #999;border-bottom: 1px solid #999">
-        <span style="font-size:16px">Copyright &copy; - 2022 by </span> <a href="index.php"
-            class="text-decoration-none">Pizza.com.vn</a>
+        <span style="font-size:20px; letter-spacing:2px;">Copyright &copy; - 2022 by </span> <a href="index.php"
+            class="text-decoration-none" style="font-size:18px;">Pizza.com.vn</a>
     </div>
 </body>
 
