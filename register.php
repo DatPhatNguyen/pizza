@@ -43,26 +43,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="alert alert-error"></div>
             <div class="mb-3">
                 <label class="form-label">Your username:</label>
-                <input type="text" name="username" required="required" class="form-control"
+                <input type="text" name="username" required="required" class="form-control p-3"
                     placeholder="Enter your username:">
             </div>
             <div class="mb-3">
                 <label class="form-label">Your email:</label>
-                <input type="email" class="form-control" placeholder="Enter your email" name="email"
+                <input type="email" class="form-control p-3" placeholder="Enter your email" name="email"
                     required="required">
             </div>
             <div class="mb-3">
                 <label class="form-label">Your passsword:</label>
-                <input type="password" class="form-control" placeholder="Enter your password"
+                <input type="password" class="form-control p-3" placeholder="Enter your password"
                     autocomplete="new-password" required="required" name="password">
             </div>
             <div class="mb-3">
                 <label class="form-label">Confirm your passsword:</label>
                 <input type="password" placeholder="Confirm your password" name="confirmPassword"
-                    autocomplete="new-password" class="form-control" required="required">
+                    autocomplete="new-password" class="form-control p-3" required="required">
             </div>
             <div class="text-center "><input type="submit" value="Register" name="register"
-                    class="btn btn-block btn-primary w-50 mt-3">
+                    class="btn btn-block btn-primary w-50 mt-3 rounded-pill">
             </div>
         </form>
     </div>

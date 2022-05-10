@@ -68,28 +68,31 @@
 
 <body>
     <?php include('./template/header.php'); ?>;
-    <section class="container secondary-text add-container mt-5">
+    <section class="container secondary-text add-container mt-4">
         <h1 class="text-center text-uppercase add-title">add your pizza</h1>
         <form action="add.php" method="POST" class="add-form">
             <div class="mb-3">
-                <label class="form-label">Your Email:</label>
-                <input type="text" name="email" class="form-control" value="<?php echo htmlspecialchars($email) ?>">
+                <label class="form-label font-weight-bold">Your Email:</label>
+                <input type="text" name="email" class="form-control no-border"
+                    value="<?php echo htmlspecialchars($email) ?>" placeholder="pizzahot@gmail.com">
                 <div class="text-danger"><?php echo $errors['email']; ?></div>
             </div>
             <div class="mb-3">
-                <label class="form-label">Pizza Title:</label>
-                <input type="text" name="title" class="form-control" value="<?php echo htmlspecialchars($title) ?>">
-                <div class="text-danger"><?php echo $errors['title']; ?></div>
+                <label class="form-label font-weight-bold">Pizza Title:</label>
+                <textarea type="text" name="title" class="form-control no-borderp p-3"
+                    value="<?php echo htmlspecialchars($title) ?>" rows="3"
+                    placeholder="Example: Indian Pizza "></textarea>
             </div>
             <div class="mb-3">
-                <label class="form-label">Ingredients (comma separated):</label>
-                <input type="text" name="ingredients" class="form-control"
-                    value="<?php echo htmlspecialchars($ingredients) ?>">
+                <label class="form-label  font-weight-bold">Ingredients (comma separated):</label>
+                <textarea type="text" name="ingredients" class="form-control no-borderp p-3 "
+                    value="<?php echo htmlspecialchars($ingredients) ?>" rows="3"
+                    placeholder="Example: beef, scrimp, eggs"></textarea>
                 <div class="text-danger"><?php echo $errors['ingredients']; ?></div>
             </div>
             <div class="text-center">
                 <input type="submit" name="submit" value="ADD MY ORDER"
-                    class="btn btn-outline-primary btn-block mt-3 btn-add">
+                    class="btn btn-outline-primary btn-block mt-3 btn-add p-2 add-order">
             </div>
         </form>
     </section>

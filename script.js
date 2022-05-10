@@ -5,6 +5,5 @@ $(document).ready(function () {
   });
   $(".header-hide .bar").click(function () {
     $(".header .header-right").slideToggle("slow").stopImmediatePropagation();
-    $(".header-hide .bar").addClass("fa solid fas");
   });
 });

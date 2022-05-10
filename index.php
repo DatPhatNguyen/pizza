@@ -26,8 +26,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <style>
 
+    <style>
+    h1 {
+        font-size: 60px;
+    }
     </style>
 </head>
 
@@ -67,8 +70,10 @@
         </div>
     </div>
     <!-- Order State -->
-    <h1 class="text-uppercase text-center black-text my-5" data-aos="fade-down-right">-- Pizzas! --</h1>
-    <div class="container">
+    <h1 class="text-uppercase text-center black-text my-5" style="font-weight:900; letter-spacing:3px; font-size:60px;"
+        data-aos="fade-down-right"> - Pizzas! -
+    </h1>
+    <div class="container-fluid">
         <div class="row bg-light pt-2 pb-4 px-4">
             <?php foreach($pizzas as $pizza) :?>
             <div class="col-md-4 mt-5">
@@ -90,10 +95,90 @@
             </div>
             <?php endforeach; ?>
         </div>
+
+        <!-- Decoration -->
+        <section class="decoration bg-light mt-5 p-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                        <img src="./images/plate-decoration-img.png" alt="" class="decoration-image mb-2"
+                            style="width:90px; height:90px;">
+                        <h3 class="decoration-title  text-uppercase">order your food</h3>
+                        <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">Lorem
+                            ipsum, dolor sit amet
+                            consectetur
+                            adipisicing elit. Iusto est
+                            facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
+                            Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                        <img src="./images/delivery-decoration-image-removebg-preview.png" alt=""
+                            class="decoration-image mb-2" style="width:90px; height:90px;">
+                        <h3 class="decoration-title text-uppercase">delivery or pick up</h3>
+                        <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">Lorem
+                            ipsum, dolor sit amet
+                            consectetur
+                            adipisicing elit. Iusto est
+                            facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
+                            Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                        <img src="./images/pizza-decoration-image-removebg-preview.png" alt=""
+                            class="decoration-image mb-2" style="width:90px; height:90px;">
+                        <h3 class="decoration-title text-uppercase">delicious receipe</h3>
+                        <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">Lorem
+                            ipsum, dolor sit amet
+                            consectetur
+                            adipisicing elit. Iusto est
+                            facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
+                            Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="speciality bg-light p-3 mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-12 col-md-12">
+                        <div class="speciality-part text-center my-3 ">
+                            <p class="text-capitalize fst-italic fw-light"
+                                style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">fresh from pizza</p>
+                            <h1 class="text-uppercase font-weight-bold"
+                                style="letter-spacing:3px; font-weight:900; font-size:60px;">our
+                                speciality</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-4">
+                    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                        <img src="./images/pizza-2.jpg"
+                            style="height:250px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                            alt="">
+                        <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">indian pizza</p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                        <img src="./images/pizza-4.jpg"
+                            style="height:250px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                            alt="">
+                        <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">vegetarian pizza</p>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                        <img src="./images/pizza-6.jpg"
+                            style="height:250px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                            alt="">
+                        <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">Cheese Sauce Pizza</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Menu -->
-        <h1 class="menu-title my-5 text-center text-uppercase" id="our-menu" data-aos="fade-down-left">-- our menu --
+        <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;font-size:60px;" id="our-menu"
+            data-aos="fade-down-left"> - our menu -
         </h1>
-        <div id="menu" class="bg-light p-5 container">
+        <div id="menu" class="bg-light p-5 container-fluid">
             <div class="row ">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3" data-aos="fade-right">
                     <div class="card text-center  index-card">
@@ -233,11 +318,14 @@
             </div>
         </div>
     </div>
-    <h1 class="blog-title my-5 text-center" data-aos="fade-down" id="blog">-- Blog --</h1>
+    <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; font-size:60px;"
+        data-aos="fade-down" id="blog">
+        - Blog - </h1>
     <div class="bg-light blog">
-        <div class="blog-container container py-3 px-4">
-            <h5 class="blog-container__title my-3 text-secondary font-weight-bold">Different Pizza Types For Different
-                Palates</h5>
+        <div class="blog-container container-fluid py-3 px-4">
+            <h4 class="blog-container__title my-3 text-secondary" style="font-weight:900">Different Pizza Types For
+                Different
+                Palates</h4>
             <div class="blog-image">
                 <img src="./images/pizza-blog-1.jpg" alt="" class="img-1 w-100 " data-aos="flip-right">
             </div>
@@ -247,7 +335,7 @@
                     specially in the USA and Italy. In addition to the ready-made pizzas that are available at pizza
                     restaurants you can also choose pizzas with only the ingredients you want to eat.</p>
             </div>
-            <h5 class="blog-container__title mt-5 mb-3 text-secondary font-weight-bold">Vegetarian Pizza</h5>
+            <h4 class="blog-container__title mt-5 mb-3 text-secondary" style="font-weight:900">Vegetarian Pizza</h4>
             <div class="blog-content">
                 <p class="blog-content__text my-4 text-secondary">The vegetarian pizzas are made mainly for consumers
                     who prefer vegetables and generally ingredients such as peppers, mushrooms, tomatoes, cheddar,
@@ -256,21 +344,21 @@
                     often preferred by people who do not eat meat, contains less calories in comparison with other
                     selections.</p>
             </div>
-            <h5 class="blog-container__title mt-5 mb-3 text-secondary font-weight-bold">Neapolitan Pizza</h5>
+            <h4 class="blog-container__title mt-5 mb-3 text-secondary" style="font-weight:900">Neapolitan Pizza</h4>
             <div class="blog-content">
                 <p class="blog-content__text my-4 text-secondary">Neapolitan pizza, which is one of the most popular
                     among pizza varieties, appeals to all tastes due to its abundant of ingredients. This type of pizza
                     meets expectations of consumers who enjoy intense flavors, which ingredients such as sausage,
                     salami, tomatoes, onions, mushrooms, olives, corn, cheese and eggs are used.</p>
             </div>
-            <h5 class="blog-container__title mt-5 mb-3 text-secondary font-weight-bold">New York Pizza</h5>
+            <h4 class="blog-container__title mt-5 mb-3 text-secondary" style="font-weight:900">New York Pizza</h4>
             <div class="blog-content">
                 <p class="blog-content__text my-4 text-secondary">The New York pizza type, which is popular with
                     children, is more appealing to people who enjoy simple delicacies. This, light and easy to digest
                     pizza is made of tomatoes, cheddar and onion on a thin crust. There is also a variant of this pizza
                     made with ground mutton. You can make a choice based on your palate.</p>
             </div>
-            <h5 class="blog-container__title mt-5 mb-3 text-secondary font-weight-bold">Chicago Pizza</h5>
+            <h4 class="blog-container__title mt-5 mb-3 text-secondary" style="font-weight:900">Chicago Pizza</h4>
             <div class="blog-content">
                 <p class="blog-content__text my-4 text-secondary">The Chicago pizza type, which has a different
                     structure than the other pizzas, is known as deep-dish pizza with high edges and thick layer of
@@ -278,14 +366,15 @@
                     Chicago pizza, which you can add different ingredients depending on your wishes, is also a thick
                     crust pizza.</p>
             </div>
-            <h5 class="blog-container__title mt-5 mb-3 text-secondary font-weight-bold">Pizza Margherita</h5>
+            <h4 class="blog-container__title mt-5 mb-3 text-secondary" style="font-weight:900">Pizza Margherita</h4>
             <div class="blog-content">
                 <p class="blog-content__text my-4 text-secondary">This pizza variant named after Queen Margherita is
                     while also the first pizza made, it contains tomatoes, Mozzarella and basil. This variant loved by
                     the Italian people emerged during the poverty and wartime period, in which Italian women would add
                     ingredients that were available on the dough</p>
             </div>
-            <h5 class="blog-container__title mt-5 mb-3 text-secondary">Tips For the Perfect Pizza</h5>
+            <h4 class="blog-container__title mt-5 mb-3 text-secondary" style="font-weight:900">Tips For the Perfect
+                Pizza</h4>
             <div class="blog-image">
                 <img src="./images/pizza-blog-1.jpg" alt="" class="img-1 w-100" data-aos="flip-left">
             </div>
@@ -303,11 +392,72 @@
             </div>
         </div>
     </div>
-    <h1 class="review-title text-uppercase text-center my-5" id="review-title" data-aos="fade-up">-- review --</h1>
-    <div id="review" class="container review-container bg-light p-5">
-        <div class=" slide p-4 mb-3">
-            <h5>Minh Hanh</h5>
+    <section class="chef p-3 mt-5 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-12 col-md-12">
+                    <div class="chef-heading-part text-center my-3 ">
+                        <p class="text-capitalize fst-italic fw-light"
+                            style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">meet
+                            exprets</p>
+                        <h1 class="text-uppercase font-weight-bold"
+                            style="letter-spacing:3px; font-weight:900; font-size:60px;">our
+                            best chef</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3" data-aos="fade-right">
+                    <div class="card text-center">
+                        <img src="./images/portrait-1.jpg" alt="" class="card-img-top"
+                            style="height:450px; object-fit:cover; object-position:center;">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title text-capitalize">Gordon Ramsey</h5>
+                            <div class="card-text text-capitalize  fst-italic">head chef</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3" data-aos="fade-right">
+                    <div class="card text-center">
+                        <img src="./images/portrait-2.jpg" alt="" class="card-img-top"
+                            style="height:450px; object-fit:cover; object-position:center;">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title text-capitalize">Thomas Keller</h5>
+                            <div class="card-text text-capitalize fst-italic">head chef</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3" data-aos="fade-right">
+                    <div class="card text-center">
+                        <img src="./images/portrait-3.jpg" alt="" class="card-img-top"
+                            style="height:450px; object-fit:cover; object-position:center;">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title text-capitalize">heston blumenthal</h5>
+                            <div class="card-text text-capitalize fst-italic">head chef</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3" data-aos="fade-right">
+                    <div class="card text-center">
+                        <img src="./images/portrait-4.jpg" alt="" class="card-img-top"
+                            style="height:450px; object-fit:cover; object-position:center;">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title text-capitalize">emeril lagasse</h5>
+                            <div class="card-text text-capitalize fst-italic">head chef</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <h1 class="review-title text-uppercase text-center my-5"
+        style="font-weight:900; letter-spacing:3px; font-size:60px;" id="review-title" data-aos="fade-up">- review -
+    </h1>
+    <div id="review" class="container-fluid review-container bg-light p-5">
+        <div class=" slide p-5 mb-4" data-aos="fade-right">
+            <h4>Minh Hanh</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quaerat quibusdam
                 accusamus ipsum a laboriosam vero exercitationem sequi repudiandae? In sit nisi pariatur libero
                 cumque reprehenderit sint ut illum qui?</p>
@@ -318,8 +468,8 @@
                 <i class="fa-solid fa-star"></i>
             </div>
         </div>
-        <div class=" slide p-4 mb-3">
-            <h5>Dat Nguyen</h5>
+        <div class="slide p-5 mb-4" data-aos="fade-left">
+            <h4>Dat Nguyen</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quaerat quibusdam
                 accusamus ipsum a laboriosam vero exercitationem sequi repudiandae? In sit nisi pariatur libero
                 cumque reprehenderit sint ut illum qui?</p>
@@ -331,9 +481,19 @@
                 <i class="fa-solid fa-star"></i>
             </div>
         </div>
-        <div class=" slide p-4 mb-3">
-            <h5>John Doe</h5>
-
+        <div class="slide p-5 mb-4" data-aos="fade-left">
+            <h4>Truong An</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quaerat quibusdam
+                accusamus ipsum a laboriosam vero exercitationem sequi repudiandae? In sit nisi pariatur libero
+                cumque reprehenderit sint ut illum qui?</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class=" slide p-5 mb-4" data-aos="fade-right">
+            <h4>John Doe</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta possimus magnam, sequi eius
                 animi amet vero saepe veritatis nam a optio commodi minus porro exercitationem. Accusantium
                 similique quia officiis fugit itaque magnam, sit deleniti minus repellat maxime qui, nemo, amet
@@ -344,8 +504,8 @@
                 <i class="fa-solid fa-star"></i>
             </div>
         </div>
-        <div class=" slide p-4 mb-3">
-            <h5>Alex</h5>
+        <div class=" slide p-5 mb-4" data-aos="fade-left">
+            <h4>Alex</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam vel possimus officiis cum
                 inventore et quisquam expedita dicta quae tenetur dolor totam praesentium ullam officia
                 temporibus repellendus consequatur tempora autem repudiandae ex veritatis, facilis dolores.</p>
@@ -356,8 +516,8 @@
                 <i class="fa-solid fa-star"></i>
             </div>
         </div>
-        <div class=" slide p-4">
-            <h5>Peter</h5>
+        <div class="slide p-5" data-aos="fade-right">
+            <h4>Peter</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere vel voluptatibus similique
                 incidunt veritatis nobis itaque. Vitae animi ratione a, quo minus doloremque quibusdam, officiis
                 numquam est placeat magnam temporibus. Suscipit provident totam magnam neque quam eveniet esse
@@ -370,7 +530,6 @@
                 <i class="fa-solid fa-star"></i>
             </div>
         </div>
-
     </div>
     <?php
         include('./template/footer.php');
@@ -378,7 +537,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <script>
     AOS.init({
         offset: 300,
