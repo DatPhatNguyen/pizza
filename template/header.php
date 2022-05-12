@@ -29,7 +29,7 @@
                 <a href="#review-title" class="text-decoration-none  text-muted header text-capitalize">Review</a>
                 <a href="register.php" class="text-decoration-none text-muted header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Register</a>
-                <a href="login.php" class="text-decoration-none text-muted header text-capitalize"
+                <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a>
             </div>
             <div class=" header-hide">

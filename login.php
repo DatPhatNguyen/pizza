@@ -10,11 +10,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['user'] = $username;
          $sql = "INSERT INTO users (username, email, password)" . "VALUES ('$username','$email','$password')";
         if($mysqli->query($sql)) {
-            $_SESSION['message'] = "Registration is sucessful ! Added $username to database!";
-            header("location: welcome.php"); 
+            $_SESSION['message'] = "Login is sucessful ! Welcomback $username";
+            header("location: welcomeBack.php"); 
         }
         else {
-            $_SESSION['message'] = "User couldn't be add to the database !!";
+            $_SESSION['message'] = "Invalid user!!";
         }
     }
     else {
@@ -22,7 +22,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php include('./template/header.php') ?>;
     <div class="container bg-light p-3 my-2">
         <form action="register.php" class="register-form" method="post" enctype="multipart/form" autocomplete="off">
-            <h1 class="text-center" style="margin-bottom:-25px">Resigter</h1>
+            <h1 class="text-center" style="margin-bottom:-25px">Login</h1>
             <div class="alert alert-error"></div>
             <div class="mb-3">
                 <label class="form-label">Your username:</label>
@@ -66,8 +65,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     class="btn btn-block btn-primary w-50 mt-3 rounded-pill">
             </div>
             <div class="text-center text-capitalize mt-3">
-                Alreay have an account
-                <a href="login.php" class="text-primary">Login</a>
+                Dont have an account yet !!
+                <a href="register.php" class="text-primary">Register</a>
             </div>
         </form>
     </div>
