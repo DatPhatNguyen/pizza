@@ -8,6 +8,11 @@
 html {
   scroll-behavior: smooth;
 }
+textarea {
+  outline: none;
+  border: none;
+  overflow: auto;
+}
 ::selection {
   color: #fff;
   background: #d7624e;
