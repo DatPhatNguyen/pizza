@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
 </head>
 
 <body>
@@ -27,7 +26,8 @@
                 <a href="#our-menu" class="text-decoration-none  text-muted header text-capitalize">Menu</a>
                 <a href="#blog" class="text-decoration-none  text-muted header text-capitalize">Blog</a>
                 <a href="#review-title" class="text-decoration-none  text-muted header text-capitalize">Review</a>
-                <a href="register.php" class="text-decoration-none text-muted header text-capitalize"
+                <a href="order.php" class="text-decoration-none  text-muted header text-capitalize">Order</a>
+                <a href="registration.php" class="text-decoration-none text-muted header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Register</a>
                 <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a>
@@ -43,6 +43,5 @@
     </header>
 </body>
 <script src="./script.js"></script>
-
 
 </html>

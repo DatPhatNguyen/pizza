@@ -3,7 +3,9 @@
 * {
   font-family: "Montserrat", "sans-serif";
 }
-
+h1 {
+  font-size: 60px;
+}
 /* ! HTML */
 html {
   scroll-behavior: smooth;
@@ -22,10 +24,9 @@ textarea {
   margin: 6rem auto;
   max-width: 560px;
   padding: 20px;
-  border: 1px solid #999;
 }
-/* ! detail.php */
 
+/* ! detail.php */
 /* !  index.php */
 .pizza-image {
   width: 100px;
@@ -170,6 +171,9 @@ header {
 }
 /* ! Responsive */
 @media (min-width: 769px) and (max-width: 1140px) {
+  h1 {
+    font-size: 60px;
+  }
   .header .header-right {
     position: absolute;
     top: 99%;
@@ -193,6 +197,9 @@ header {
   }
 }
 @media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
   .header .header-right {
     position: absolute;
     top: 99%;
@@ -217,7 +224,7 @@ header {
 }
 @media (max-width: 576px) {
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .footer-row {
     margin-left: 20px;

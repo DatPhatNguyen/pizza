@@ -1,4 +1,4 @@
--- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
+<< << << < HEAD -- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
 --
 -- Host: localhost    Database: test
 -- ------------------------------------------------------
@@ -74,4 +74,3 @@ UNLOCK TABLES;
 ;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */
 ;
--- Dump completed on 2022-04-27 22:59:34
