@@ -222,7 +222,7 @@ header {
     display: block;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   h1 {
     font-size: 45px;
   }

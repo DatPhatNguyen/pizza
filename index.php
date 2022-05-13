@@ -26,11 +26,7 @@
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-     <style>
-     h1 {
-         font-size: 60px;
-     }
-     </style>
+
  </head>
 
  <body>

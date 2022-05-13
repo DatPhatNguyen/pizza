@@ -26,7 +26,7 @@
                 <a href="#our-menu" class="text-decoration-none  text-muted header text-capitalize">Menu</a>
                 <a href="#blog" class="text-decoration-none  text-muted header text-capitalize">Blog</a>
                 <a href="#review-title" class="text-decoration-none  text-muted header text-capitalize">Review</a>
-                <a href="order.php" class="text-decoration-none  text-muted header text-capitalize">Order</a>
+                <a href="store.php" class="text-decoration-none  text-muted header text-capitalize">Order</a>
                 <a href="registration.php" class="text-decoration-none text-muted header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Register</a>
                 <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
