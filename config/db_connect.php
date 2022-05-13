@@ -3,6 +3,6 @@
 $conn = mysqli_connect('localhost','root','','test');
     //check connection
     if(!$conn) {
-        echo 'Connection error' . mysqli_connect_error();
+        die('Connection error'  . mysqli_connect_error());
     }
 ?>

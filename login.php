@@ -1,8 +1,18 @@
 <?php
-session_start();
-$_SESSION['message'] = '';
-$mysqli = mysqli_connect('localhost','root','','test');
-
+if (isset($_POST['submit'])) {
+    $username = $_POST['uid'];
+    $password = $_POST['password'];
+    require_once "./config/db_connect.php";
+    require_once "./function.inc.php";
+    if (emptyInputLogin($username, $password) !== false) {
+        header("location: ./login.php?error=emptyinput");
+        exit();
+    }
+    loginUser($conn, $username, $password);
+} else {
+    header("location: ./login.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,31 +29,41 @@ $mysqli = mysqli_connect('localhost','root','','test');
 </head>
 
 <body>
-    <?php include('./template/header.php');?>;
+    <?php include './template/header.php';?>;
     <div class="container bg-light p-3 my-2">
         <form action="register.php" class="login-form" method="post" enctype="multipart/form" autocomplete="off">
-            <h1 class="text-center font-weight-bold" style="margin-bottom:-15px;color:#422465;">Log In Form
+            <h1 class="text-center font-weight-bold" style="margin-bottom:-15px;color:#422465;">Log In
             </h1>
             <div class="alert alert-error"></div>
             <div class="mb-4">
-                <label class="form-label" style="color:#422465;">Your username:</label>
-                <input type="text" name="username" required class="form-control p-3"
-                    placeholder="Enter your username/email..">
+                <label class="form-label" style="color:#422465;">Username/Email:</label>
+                <input type="text" name="name" required class="form-control p-3" placeholder="Username/email..">
             </div>
             <div class="mb-4">
                 <label class="form-label" style="color:#422465;">Your passsword:</label>
                 <input type="password" class="form-control p-3" placeholder="Enter your password" required
                     name="password">
             </div>
-            <div class="text-center"><input type="submit" value="Register" name="register"
-                    class="btn btn-block btn-primary w-25 mt-3 rounded">
+            <div class="text-center"><button type="submit" value="Log In" name="Submit"
+                    class="btn btn-block btn-primary w-25 mt-3 rounded"></button>
             </div>
             <div class="text-center text-capitalize mt-4">
                 Dont have an account yet !!
-                <a href="registration.php" class="text-primary">Register</a>
+                <a href="registration.php" class="text-primary">Registration</a>
             </div>
         </form>
+        <?php
+if (isset($_GET["error"])) {
+    if ($_GET['error'] == "emptyinput") {
+        echo "<p>Fill in all fields!</p>";
+    } else if ($_GET["error"] == "wronglogin") {
+        echo "<p>Incorrect login information</p>";
+    }
+}
+?>
     </div>
-    <?php include('./template/footer.php') ?>
+
+
+    <?php include './template/footer.php'?>
 
 </body>
