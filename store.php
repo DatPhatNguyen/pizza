@@ -17,33 +17,33 @@
 
     <section class="container content-section">
         <h2 class="section-header">Order</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Album 1</span>
+        <div class="shop-items row text-center">
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza</span>
                 <img class="shop-item-image" src="./images/pizza-1.jpg">
-                <div class="shop-item-details">
+                <div class="shop-item-details ">
                     <span class="shop-item-price">$12.99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Album 2</span>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza</span>
                 <img class="shop-item-image" src="./images/pizza-2.jpg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$14.99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Album 3</span>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
                 <img class="shop-item-image" src="./images/pizza-3.jpg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$9.99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Album 4</span>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
                 <img class="shop-item-image" src="./images/pizza-4.jpg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$19.99</span>
@@ -53,27 +53,6 @@
         </div>
     </section>
 
-    <section class="container content-section">
-        <h2 class="section-header">MERCH</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">T-Shirt</span>
-                <img class="shop-item-image" src="Images/Shirt.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Coffee Cup</span>
-                <img class="shop-item-image" src="Images/Cofee.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$6.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
         <div class="cart-row">
@@ -86,7 +65,8 @@
             <strong class="cart-total-title">Total:</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase text-center" type="button">PURCHASE</button>
+        <div class="text-center"><button class="btn btn-primary btn-purchase" type="button"
+                style="font-size: 1.2em;">PURCHASE</button></div>
     </section>
     <?php include './template/footer.php'; ?>
 </body>

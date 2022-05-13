@@ -35,8 +35,7 @@ body {
 }
 
 .shop-item {
-  display: flex;
-  margin: 30px;
+  padding: 0;
 }
 .shop-items {
   flex-basis: 33.333%;
@@ -49,6 +48,7 @@ body {
   font-size: 1.5em;
   color: #333;
   margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 .shop-item-image {
@@ -63,13 +63,14 @@ body {
   display: flex;
   align-items: center;
   padding: 5px;
+  justify-content: space-between;
 }
-
+/* 
 .shop-item-price {
   flex-grow: 1;
   color: #333;
-}
-.shop-items {
+} */
+/* .shop-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -78,7 +79,7 @@ body {
   font-weight: bold;
   font-size: 1.25em;
   color: #333;
-}
+} */
 .cart-column {
   display: flex;
   align-items: center;
