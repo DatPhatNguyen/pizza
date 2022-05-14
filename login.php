@@ -40,7 +40,6 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($conn, $sql);
         $count = mysqli_num_rows($result);
         $row = mysqli_fetch_assoc($result);
-        print($count);
         if ($count == 1 && $row['password'] == $password) {
             $_SESSION['username'] = $row['username'];
             header('location: ./index.php');
@@ -69,7 +68,7 @@ mysqli_close($conn);
     <?php include './template/header.php';?>;
     <div class="container bg-light p-3 my-2">
         <form action="login.php" class="login-form" method="post" enctype="multipart/form" autocomplete="off">
-            <h1 class="text-center font-weight-bold" style="margin-bottom:-15px;color:#422465;">Log In
+            <h1 class="text-center font-weight-bold mb-3" style="color:#422465;">Log In
             </h1>
             <?php
 if (isset($errorMessage)) {
@@ -98,9 +97,9 @@ if (isset($errorMessage)) {
 ?></p>
             </div>
             <div class="text-center"><button type="submit" value="Log In" name="submit"
-                    class="btn btn-block btn-primary w-25 mt-3 rounded">Log In</button>
+                    class="btn btn-block btn-primary w-50 mt-3 rounded">Log In</button>
             </div>
-            <div class="text-center text-capitalize mt-4">
+            <div class="text-center text-capitalize mt-4 mb-3">
                 Dont have an account yet !!
                 <a href="registration.php" class="text-primary">Registration</a>
             </div>

@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <header class="container-fluid header p-2">
+    <header class="container-fluid header p-1">
         <div class="d-flex justify-content-around align-items-center">
             <a href="index.php" class="text-decoration-none  text-muted header-left d-flex align-items-center "
                 style="font-size:25px">
                 <img src="./images/pizza-logo.png" alt="" style="width:60px" name="header-image"> <span
-                    class="text-uppercase font-weight-bold">Pizza</span>
+                    class="text-capitalize font-weight-bold">Pizza</span>
             </a>
             <div class="header-right" id="nav">
                 <a href="add.php" class="text-decoration-none  text-muted text-capitalize">add pizza</a>

@@ -4,7 +4,7 @@
   font-family: "Montserrat", "sans-serif";
 }
 h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 /* ! HTML */
 html {
@@ -165,13 +165,16 @@ header {
   padding-left: 10px;
 }
 /* ! Responsive */
-@media (min-width: 769px) and (max-width: 1140px) {
-  h1 {
-    font-size: 60px;
-  }
+@media (min-width: 1300px) {
   .login-form,
   .register-form {
-    width: 60%;
+    width: 50%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1294px) {
+  .login-form,
+  .register-form {
+    min-width: 50%;
   }
   .header .header-right {
     position: absolute;
@@ -197,7 +200,11 @@ header {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 50px;
+    font-size: 45px;
+  }
+  .login-form,
+  .register-form {
+    width: 75%;
   }
   .header .header-right {
     position: absolute;
@@ -224,6 +231,10 @@ header {
 @media (min-width: 320px) and (max-width: 576px) {
   h1 {
     font-size: 45px;
+  }
+  .login-form,
+  .register-form {
+    width: 80%;
   }
   .footer-row {
     margin-left: 20px;

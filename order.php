@@ -19,7 +19,7 @@
         <h2 class="section-header">Order</h2>
         <div class="shop-items row text-center">
             <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Pizza</span>
+                <span class="shop-item-title">Pizza 1</span>
                 <img class="shop-item-image" src="./images/pizza-1.jpg">
                 <div class="shop-item-details ">
                     <span class="shop-item-price">$12.99</span>
@@ -45,6 +45,46 @@
             <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
                 <span class="shop-item-title">Pizza </span>
                 <img class="shop-item-image" src="./images/pizza-4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
+                <img class="shop-item-image" src="./images/pizza-5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
+                <img class="shop-item-image" src="./images/pizza-6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
+                <img class="shop-item-image" src="./images/pizza-7.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
+                <img class="shop-item-image" src="./images/pizza-8.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
+                <span class="shop-item-title">Pizza </span>
+                <img class="shop-item-image" src="./images/pizza-9.jpg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$19.99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>

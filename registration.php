@@ -35,6 +35,7 @@ if (isset($_POST['submit'])) {
         $errorConfirmPassword = "Please reconfirm password! ";
     }
     if ($password != $confirmPassword) {
+        $error = true;
         echo '<p>Password did not match! </p>';
     }
     $password = md5($password);
@@ -46,7 +47,6 @@ if (isset($_POST['submit'])) {
             echo 'Error: ' . mysqli_error($conn);
         }
     }
-
 }
 ?>
 
@@ -156,7 +156,7 @@ if (isset($successMessage)) {
 ?></p>
             <div class="text-center ">
                 <button type="submit" value="Register" name="submit"
-                    class="btn btn-block btn-primary w-25 mt-3 rounded">Register</button>
+                    class="btn btn-block btn-primary w-50 mt-3 rounded">Register</button>
             </div>
             <div class="text-center text-capitalize mt-3">
                 Alreay have an account.
@@ -164,25 +164,25 @@ if (isset($successMessage)) {
             </div>
         </form>
     </div>
-    <!-- <?php
-if (isset($_GET["error"])) {
-    if ($_GET['error'] == "emptyinput") {
-        echo "<p>Fill in all fields!</p>";
-    } else if ($_GET["error"] == "invalidUid") {
-        echo "<p>Choose a proper username!</p>";
-    } else if ($_GET["error"] == "invalidemail") {
-        echo "<p>Choose a proper email!</p>";
-    } else if ($_GET["error"] == "passwordsdontmatch") {
-        echo "<p>Password doesn't match!</p>";
-    } else if ($_GET["error"] == "stmtfailed") {
-        echo "<h2>Something went wrong, try again! </h2>";
-    } else if ($_GET["error"] == "usernametaken") {
-        echo "<p>Username alreay taken!</p>";
-    } else if ($_GET["error"] == "none") {
-        echo "<p>You have signed up!</p>";
-    }
-}
-?> -->
+    <?php
+// if (isset($_GET["error"])) {
+//     if ($_GET['error'] == "emptyinput") {
+//         echo "<p>Fill in all fields!</p>";
+//     } else if ($_GET["error"] == "invalidUid") {
+//         echo "<p>Choose a proper username!</p>";
+//     } else if ($_GET["error"] == "invalidemail") {
+//         echo "<p>Choose a proper email!</p>";
+//     } else if ($_GET["error"] == "passwordsdontmatch") {
+//         echo "<p>Password doesn't match!</p>";
+//     } else if ($_GET["error"] == "stmtfailed") {
+//         echo "<h2>Something went wrong, try again! </h2>";
+//     } else if ($_GET["error"] == "usernametaken") {
+//         echo "<p>Username alreay taken!</p>";
+//     } else if ($_GET["error"] == "none") {
+//         echo "<p>You have signed up!</p>";
+//     }
+// }
+// ?>
     <?php include './template/footer.php'?>
 </body>
 

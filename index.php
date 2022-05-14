@@ -31,7 +31,7 @@ mysqli_close($conn);
  </head>
 
  <body>
-     <?php include './template/header.php';?>
+     <?php include './template/header.php'?>;
      <!-- Carousel -->
      <div class="carousel">
          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -96,7 +96,7 @@ mysqli_close($conn);
          <section class="decoration bg-light mt-5 p-5">
              <div class="container-fluid">
                  <div class="row">
-                     <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                     <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up">
                          <img src="./images/plate-decoration-img.png" alt="" class="decoration-image mb-2"
                              style="width:90px; height:90px;">
                          <h3 class="decoration-title  text-uppercase">order your food</h3>
@@ -108,7 +108,7 @@ mysqli_close($conn);
                              facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
                              Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
                      </div>
-                     <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                     <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="200">
                          <img src="./images/delivery-decoration-image-removebg-preview.png" alt=""
                              class="decoration-image mb-2" style="width:90px; height:90px;">
                          <h3 class="decoration-title text-uppercase">delivery or pick up</h3>
@@ -120,7 +120,7 @@ mysqli_close($conn);
                              facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
                              Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
                      </div>
-                     <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                     <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="400">
                          <img src="./images/pizza-decoration-image-removebg-preview.png" alt=""
                              class="decoration-image mb-2" style="width:90px; height:90px;">
                          <h3 class="decoration-title text-uppercase">delicious receipe</h3>
@@ -150,13 +150,13 @@ mysqli_close($conn);
                      </div>
                  </div>
                  <div class="row px-4">
-                     <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                     <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up">
                          <img src="./images/pizza-2.jpg"
                              style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">indian pizza</p>
                      </div>
-                     <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                     <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="200">
                          <img src="./images/pizza-4.jpg"
                              style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
@@ -164,7 +164,7 @@ mysqli_close($conn);
                          </p>
 
                      </div>
-                     <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                     <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="400">
                          <img src="./images/pizza-6.jpg"
                              style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
