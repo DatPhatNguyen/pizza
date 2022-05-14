@@ -1,16 +1,17 @@
  <?php
-    include('./config/db_connect.php');
-    // write sql query
-    $sql = 'SELECT title, ingredients ,id from pizzas ORDER BY created_at';
-    // make query and get result
-    $result = mysqli_query($conn, $sql);
-    // fetch the resulting rows as an array
-    $pizzas = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    // free result from memory
-    mysqli_free_result($result);
-    // close connection
-    mysqli_close($conn);
-    // print_r(explode(',',$pizzas[0]['ingredients']));
+session_start();
+include './config/db_connect.php';
+// write sql query
+$sql = 'SELECT title, ingredients ,id from pizzas ORDER BY created_at';
+// make query and get result
+$result = mysqli_query($conn, $sql);
+// fetch the resulting rows as an array
+$pizzas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+// free result from memory
+mysqli_free_result($result);
+// close connection
+mysqli_close($conn);
+// print_r(explode(',',$pizzas[0]['ingredients']));
 ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -30,7 +31,7 @@
  </head>
 
  <body>
-     <?php include ('./template/header.php');?>
+     <?php include './template/header.php';?>
      <!-- Carousel -->
      <div class="carousel">
          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -70,25 +71,25 @@
      </h1>
      <div class="container-fluid">
          <div class="row bg-light pt-2 pb-4 px-4">
-             <?php foreach($pizzas as $pizza) :?>
+             <?php foreach ($pizzas as $pizza): ?>
              <div class="col-md-4 mt-5">
                  <div class="card">
                      <img src="./images/pizza.svg" alt="" class="pizza-image">
                      <div class="card-body text-center p-4">
                          <h4 class=""><?php echo htmlspecialchars($pizza['title']); ?></h4>
                          <ul class="list-unstyled lh-lg">
-                             <?php foreach(explode(',',$pizza['ingredients']) as $ing) : ?>
-                             <li> <?php echo htmlspecialchars($ing);?> </li>
-                             <?php endforeach; ?>
+                             <?php foreach (explode(',', $pizza['ingredients']) as $ing): ?>
+                             <li> <?php echo htmlspecialchars($ing); ?> </li>
+                             <?php endforeach;?>
                          </ul>
                      </div>
                      <div class="card-footer text-end">
-                         <a href="detail.php?id=<?php echo $pizza['id']?>"
+                         <a href="detail.php?id=<?php echo $pizza['id'] ?>"
                              class="text-primary text-capitalize text-decoration-none">More infor</a>
                      </div>
                  </div>
              </div>
-             <?php endforeach; ?>
+             <?php endforeach;?>
          </div>
 
          <!-- Decoration -->
@@ -545,8 +546,8 @@
          </div>
      </div>
      <?php
-        include('./template/footer.php');
-    ?>
+include './template/footer.php';
+?>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

@@ -27,10 +27,18 @@
                 <a href="#blog" class="text-decoration-none  text-muted header text-capitalize">Blog</a>
                 <a href="#review-title" class="text-decoration-none  text-muted header text-capitalize">Review</a>
                 <a href="store.php" class="text-decoration-none  text-muted header text-capitalize">Order</a>
-                <a href="registration.php" class="text-decoration-none text-muted header text-capitalize"
-                    style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Registration</a>
-                <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
-                    style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a>
+                <!-- <a href="registration.php" class="text-decoration-none text-muted header text-capitalize"
+                    style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Registration</a> -->
+                <?php
+if (isset($_SESSION['username'])) {
+    echo "<a href='./logout.php' style='font-size:25px;' class='text-decoration-none  text-muted header text-capitalize'>Log Out</a>";
+} else {
+    echo "<a href='./login.php' style='font-size:25px;' class='text-decoration-none  text-muted header text-capitalize'>Log In</a>";
+    echo "<a href='./registration.php' style='font-size:25px;' class='text-decoration-none  text-muted header text-capitalize'>Registration</a>";
+}
+?>
+                <!-- <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
+                    style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a> -->
             </div>
             <div class=" header-hide">
                 <i class="fa-solid fa-bars bar" id="bar"></i>

@@ -1,18 +1,55 @@
 <?php
+session_start();
+// if (isset($_POST['submit'])) {
+// $username = $_POST['uid'];
+// $password = $_POST['password'];
+// require_once "./config/db_connect.php";
+// require_once "./function.inc.php";
+// if (emptyInputLogin($username, $password) !== false) {
+// header("location: ./login.php?error=emptyinput");
+// exit();
+// }
+// loginUser($conn, $username, $password);
+// } else {
+// header("location: ./login.php");
+// exit();
+// }
+$error = false;
+include './config/db_connect.php';
 if (isset($_POST['submit'])) {
-    $username = $_POST['uid'];
-    $password = $_POST['password'];
-    require_once "./config/db_connect.php";
-    require_once "./function.inc.php";
-    if (emptyInputLogin($username, $password) !== false) {
-        header("location: ./login.php?error=emptyinput");
-        exit();
+    $email = trim($_POST['email']);
+    $email = htmlspecialchars($email);
+
+    $password = trim($_POST['password']);
+    $password = htmlspecialchars($password);
+
+    if (empty($email)) {
+        $error = true;
+        $errorEmail = "Please fill in email field!";
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = true;
+        $errorEmail = "Please fill a valid email address!";
     }
-    loginUser($conn, $username, $password);
-} else {
-    header("location: ./login.php");
-    exit();
+    if (empty($password)) {
+        $error = true;
+        $errorPassWord = "Please fill in password field!";
+    }
+    if (!$error) {
+        $password = md5($password);
+        $sql = "SELECT * FROM users WHERE email ='$email'";
+        $result = mysqli_query($conn, $sql);
+        $count = mysqli_num_rows($result);
+        $row = mysqli_fetch_assoc($result);
+        print($count);
+        if ($count == 1 && $row['password'] == $password) {
+            $_SESSION['username'] = $row['username'];
+            header('location: ./index.php');
+        } else {
+            $errorMessage = "Invalid Username or Password!";
+        }
+    }
 }
+mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,21 +68,38 @@ if (isset($_POST['submit'])) {
 <body>
     <?php include './template/header.php';?>;
     <div class="container bg-light p-3 my-2">
-        <form action="register.php" class="login-form" method="post" enctype="multipart/form" autocomplete="off">
+        <form action="login.php" class="login-form" method="post" enctype="multipart/form" autocomplete="off">
             <h1 class="text-center font-weight-bold" style="margin-bottom:-15px;color:#422465;">Log In
             </h1>
-            <div class="alert alert-error"></div>
+
+            <?php
+if (isset($errorMessage)) {
+    ?>
+            <div class=" text-center alert alert-success mb-2 mt-4  mx-auto" style="width:90%px; color:black;">
+                <?php echo $errorMessage;
+    ?>
+            </div>
+            <?php
+}
+?>
             <div class="mb-4">
                 <label class="form-label" style="color:#422465;">Username/Email:</label>
-                <input type="text" name="name" required class="form-control p-3" placeholder="Username/email..">
+                <input type="text" name="email" class="form-control p-3" placeholder="Username/email..">
+                <p class="text-danger"><?php if (isset($errorEmail)) {
+    echo $errorEmail;
+}
+?></p>
             </div>
             <div class="mb-4">
                 <label class="form-label" style="color:#422465;">Your passsword:</label>
-                <input type="password" class="form-control p-3" placeholder="Enter your password" required
-                    name="password">
+                <input type="password" class="form-control p-3" placeholder="Password.." name="password">
+                <p class="text-danger"><?php if (isset($errorEmail)) {
+    echo $errorPassWord;
+}
+?></p>
             </div>
-            <div class="text-center"><button type="submit" value="Log In" name="Submit"
-                    class="btn btn-block btn-primary w-25 mt-3 rounded"></button>
+            <div class="text-center"><button type="submit" value="Log In" name="submit"
+                    class="btn btn-block btn-primary w-25 mt-3 rounded">Log In</button>
             </div>
             <div class="text-center text-capitalize mt-4">
                 Dont have an account yet !!
