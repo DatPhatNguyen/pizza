@@ -20,11 +20,6 @@ textarea {
   background: #d7624e;
 }
 /* ! register.php */
-.register-form {
-  margin: 6rem auto;
-  max-width: 560px;
-  padding: 20px;
-}
 
 /* ! detail.php */
 /* !  index.php */
@@ -173,6 +168,10 @@ header {
 @media (min-width: 769px) and (max-width: 1140px) {
   h1 {
     font-size: 60px;
+  }
+  .login-form,
+  .register-form {
+    width: 60%;
   }
   .header .header-right {
     position: absolute;

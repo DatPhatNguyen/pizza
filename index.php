@@ -136,7 +136,7 @@ mysqli_close($conn);
              </div>
          </section>
 
-         <section class="speciality bg-light p-3 mt-5">
+         <section class="speciality bg-light p-5 mt-5">
              <div class="container-fluid">
                  <div class="row">
                      <div class="col-xl-12 col-12 col-md-12">
@@ -152,13 +152,13 @@ mysqli_close($conn);
                  <div class="row px-4">
                      <div class="col-xl-4 col-lg-4 col-md-4 text-center">
                          <img src="./images/pizza-2.jpg"
-                             style="height:250px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                             style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">indian pizza</p>
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 text-center">
                          <img src="./images/pizza-4.jpg"
-                             style="height:250px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                             style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">vegetarian pizza
                          </p>
@@ -166,7 +166,7 @@ mysqli_close($conn);
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 text-center">
                          <img src="./images/pizza-6.jpg"
-                             style="height:250px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                             style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">Cheese Sauce Pizza
                          </p>
@@ -188,12 +188,7 @@ mysqli_close($conn);
                              <h5 class="card-title text-capitalize">Cheese Pizza</h5>
                              <div class="card-text"></div>
                          </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
-                         </div>
+
                      </div>
                  </div>
                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3" data-aos="fade-right">
@@ -203,12 +198,7 @@ mysqli_close($conn);
                              <h5 class="card-title text-capitalize">Indian Pizza</h5>
                              <div class="card-text"></div>
                          </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
-                         </div>
+
                      </div>
                  </div>
                  <div class="col-12 col-sm-6 col-md-6 col-lg-4  mb-3" data-aos="fade-right">
@@ -217,12 +207,6 @@ mysqli_close($conn);
                          <div class="card-body">
                              <h5 class="card-title text-capitalize"> Sweet Pizza</h5>
                              <div class="card-text"></div>
-                         </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
                          </div>
                      </div>
                  </div>
@@ -233,12 +217,7 @@ mysqli_close($conn);
                              <h5 class="card-title text-capitalize">Vegetarian Pizza</h5>
                              <div class="card-text"></div>
                          </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
-                         </div>
+
                      </div>
                  </div>
                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -247,12 +226,6 @@ mysqli_close($conn);
                          <div class="card-body">
                              <h5 class="card-title  text-capitalize">Mushroom Pizza</h5>
                              <div class="card-text"></div>
-                         </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
                          </div>
                      </div>
                  </div>
@@ -263,12 +236,7 @@ mysqli_close($conn);
                              <h5 class="card-title  text-capitalize">Cheese Sauce Pizza </h5>
                              <div class="card-text"></div>
                          </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
-                         </div>
+
                      </div>
                  </div>
                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -277,12 +245,6 @@ mysqli_close($conn);
                          <div class="card-body">
                              <h5 class="card-title  text-capitalize">squid pizza</h5>
                              <div class="card-text"></div>
-                         </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill " style="width:70%">Add To
-                                 Cart</button>
                          </div>
                      </div>
                  </div>
@@ -293,12 +255,7 @@ mysqli_close($conn);
                              <h5 class="card-title  text-capitalize">vegetable pizza</h5>
                              <div class="card-text"></div>
                          </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
-                         </div>
+
                      </div>
                  </div>
                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -308,12 +265,7 @@ mysqli_close($conn);
                              <h5 class="card-title  text-capitalize">Cheese mushroom pizza</h5>
                              <div class="card-text"></div>
                          </div>
-                         <div class="card-footer d-flex align-items-center justify-content-around py-3">
-                             <input type="number" min="1" max="100" step="1" style="width:20%" class="rounded p-1"
-                                 placeholder="1">
-                             <button class="btn btn-danger submit btn-sm p-2 rounded-pill" style="width:70%">Add To
-                                 Cart</button>
-                         </div>
+
                      </div>
                  </div>
              </div>

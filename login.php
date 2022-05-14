@@ -71,7 +71,6 @@ mysqli_close($conn);
         <form action="login.php" class="login-form" method="post" enctype="multipart/form" autocomplete="off">
             <h1 class="text-center font-weight-bold" style="margin-bottom:-15px;color:#422465;">Log In
             </h1>
-
             <?php
 if (isset($errorMessage)) {
     ?>

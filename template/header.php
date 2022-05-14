@@ -14,19 +14,30 @@
 </head>
 
 <body>
-    <header class="container-fluid header p-1">
+    <header class="container-fluid header p-2">
         <div class="d-flex justify-content-around align-items-center">
             <a href="index.php" class="text-decoration-none  text-muted header-left d-flex align-items-center "
                 style="font-size:25px">
                 <img src="./images/pizza-logo.png" alt="" style="width:60px" name="header-image"> <span
-                    class="">Pizza</span>
+                    class="text-uppercase font-weight-bold">Pizza</span>
             </a>
             <div class="header-right" id="nav">
-                <a href="add.php" class="text-decoration-none  text-muted text-capitalize p">add pizza</a>
-                <a href="#our-menu" class="text-decoration-none  text-muted header text-capitalize">Menu</a>
-                <a href="#blog" class="text-decoration-none  text-muted header text-capitalize">Blog</a>
-                <a href="#review-title" class="text-decoration-none  text-muted header text-capitalize">Review</a>
-                <a href="order.php" class="text-decoration-none  text-muted header text-capitalize">Order</a>
+                <a href="add.php" class="text-decoration-none  text-muted text-capitalize">add pizza</a>
+                <a href="#our-menu" class="text-decoration-none header text-capitalize text-muted">Menu</a>
+                <a href="#blog" class="text-decoration-none   header text-capitalize text-muted">Blog</a>
+                <a href="#review-title" class="text-decoration-none  header text-capitalize text-muted">Review</a>
+                <a href="order.php" class="text-decoration-none  header text-capitalize order text-muted">Order</a>
+
+                <!-- <div class="header-right" id="nav">
+                <a href="add.php" class="text-decoration-none  text-muted text-capitalize">add pizza</a>
+                <a href="#our-menu" class="text-decoration-none header text-capitalize"
+                    style="color:white;background: #ff6b6b; border-radius:20px; padding:8px 14px;">Menu</a>
+                <a href="#blog" class="text-decoration-none   header text-capitalize"
+                    style="color:white;background: #2e86de; border-radius:20px; padding:8px 14px;">Blog</a>
+                <a href="#review-title" class="text-decoration-none  header text-capitalize"
+                    style="color:white;background: #f368e0; border-radius:20px; padding:8px 14px;">Review</a>
+                <a href="order.php" class="text-decoration-none  header text-capitalize order"
+                    style="color:white;background: #10ac84; border-radius:20px; padding:8px 14px;">Order</a> -->
                 <!-- <a href="registration.php" class="text-decoration-none text-muted header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Registration</a> -->
                 <?php
