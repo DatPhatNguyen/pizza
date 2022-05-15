@@ -66,7 +66,7 @@ mysqli_close($conn);
          </div>
      </div>
      <!-- Order State -->
-     <h1 class="text-uppercase text-center black-text my-5" style="font-weight:900; letter-spacing:3px; font-size:60px;"
+     <h1 class="text-uppercase text-center black-text my-5" style="font-weight:900; letter-spacing:3px;"
          data-aos="fade-down-right"> Customer's pizza
      </h1>
      <div class="container-fluid">
@@ -176,7 +176,7 @@ mysqli_close($conn);
          </section>
 
          <!-- Menu -->
-         <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;font-size:60px;" id="our-menu"
+         <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;" id="our-menu"
              data-aos="fade-down-left">our menu
          </h1>
          <div id="menu" class="bg-light p-5 container-fluid">
@@ -271,8 +271,8 @@ mysqli_close($conn);
              </div>
          </div>
      </div>
-     <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; font-size:60px;"
-         data-aos="fade-down" id="blog">
+     <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; " data-aos="fade-down"
+         id="blog">
          Blog </h1>
      <div class="bg-light blog">
          <div class="blog-container container-fluid py-3 px-4">
@@ -366,8 +366,7 @@ mysqli_close($conn);
                          <p class="text-capitalize fst-italic fw-light"
                              style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">meet
                              exprets</p>
-                         <h1 class="text-uppercase font-weight-bold"
-                             style="letter-spacing:3px; font-weight:900; font-size:60px;">our
+                         <h1 class="text-uppercase font-weight-bold" style="letter-spacing:3px; font-weight:900;">our
                              best chef</h1>
                      </div>
                  </div>
@@ -418,8 +417,8 @@ mysqli_close($conn);
      </section>
 
 
-     <h1 class="review-title text-uppercase text-center my-5"
-         style="font-weight:900; letter-spacing:3px; font-size:60px;" id="review-title" data-aos="fade-up">review
+     <h1 class="review-title text-uppercase text-center my-5" style="font-weight:900; letter-spacing:3px;"
+         id="review-title" data-aos="fade-up">review
      </h1>
      <div id="review" class="container-fluid review-container bg-light p-5">
          <div class=" slide p-5 mb-4" data-aos="fade-right">

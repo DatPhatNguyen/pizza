@@ -51,8 +51,6 @@ if (isset($_SESSION['username'])) {
     echo "<a href='./registration.php' style='font-size:25px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Register</a>";
 }
 ?>
-
-
                 <!-- <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a> -->
             </div>
