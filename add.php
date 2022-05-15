@@ -100,33 +100,36 @@ if (isset($_POST['submit'])) {
      <section class="decoration bg-light mt-5 p-5">
          <div class="container-fluid">
              <div class="row">
-                 <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                 <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up">
                      <img src="./images/plate-decoration-img.png" alt="" class="decoration-image mb-2"
                          style="width:90px; height:90px;">
                      <h3 class="decoration-title  text-uppercase">order your food</h3>
-                     <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">Lorem
+                     <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">
+                         Lorem
                          ipsum, dolor sit amet
                          consectetur
                          adipisicing elit. Iusto est
                          facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
                          Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
                  </div>
-                 <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                 <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="200">
                      <img src="./images/delivery-decoration-image-removebg-preview.png" alt=""
                          class="decoration-image mb-2" style="width:90px; height:90px;">
                      <h3 class="decoration-title text-uppercase">delivery or pick up</h3>
-                     <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">Lorem
+                     <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">
+                         Lorem
                          ipsum, dolor sit amet
                          consectetur
                          adipisicing elit. Iusto est
                          facilis molestiae, illo officiis iste voluptatibus adipisci quod consequuntur sequi.
                          Voluptas cumque earum tenetur temporibus enim rem magnam tempora? Fugiat!</p>
                  </div>
-                 <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+                 <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="400">
                      <img src="./images/pizza-decoration-image-removebg-preview.png" alt=""
                          class="decoration-image mb-2" style="width:90px; height:90px;">
                      <h3 class="decoration-title text-uppercase">delicious receipe</h3>
-                     <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">Lorem
+                     <p class="decoration-desc font-weight-light mt-2" style="font-size:13px; line-height:1.4;">
+                         Lorem
                          ipsum, dolor sit amet
                          consectetur
                          adipisicing elit. Iusto est
@@ -137,43 +140,44 @@ if (isset($_POST['submit'])) {
          </div>
      </section>
 
-     <section class="speciality bg-light p-3 mt-5">
+     <section class="speciality bg-light p-5 mt-5">
          <div class="container-fluid">
              <div class="row">
                  <div class="col-xl-12 col-12 col-md-12">
                      <div class="speciality-part text-center my-3 ">
                          <p class="text-capitalize fst-italic fw-light"
                              style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">fresh from pizza</p>
-                         <h1 class="text-uppercase font-weight-bold"
-                             style="letter-spacing:3px; font-weight:900; font-size:60px;">our
-                             speciality</h1>
+                         <h1 class="text-uppercase font-weight-bold" style="letter-spacing:3px; font-weight:900;">our
+                             best</h1>
                      </div>
                  </div>
              </div>
              <div class="row px-4">
-                 <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-                     <img src="./images/pizza-2.jpg" style="height:250px; width:90%; border-radius:50%; cursor:pointer"
+                 <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up">
+                     <img src="./images/pizza-2.jpg" style="height:auto; width:80%; border-radius:50%; cursor:pointer"
                          class="speciality-image" alt="">
                      <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">indian pizza</p>
                  </div>
-                 <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-                     <img src="./images/pizza-4.jpg" style="height:250px; width:90%; border-radius:50%; cursor:pointer"
+                 <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="200">
+                     <img src="./images/pizza-4.jpg" style="height:auto; width:80%; border-radius:50%; cursor:pointer"
                          class="speciality-image" alt="">
-                     <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">vegetarian pizza</p>
+                     <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">vegetarian pizza
+                     </p>
 
                  </div>
-                 <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-                     <img src="./images/pizza-6.jpg" style="height:250px; width:90%; border-radius:50%; cursor:pointer"
+                 <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="400">
+                     <img src="./images/pizza-6.jpg" style="height:auto; width:80%; border-radius:50%; cursor:pointer"
                          class="speciality-image" alt="">
-                     <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">Cheese Sauce Pizza</p>
+                     <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">Cheese Sauce Pizza
+                     </p>
                  </div>
              </div>
          </div>
      </section>
 
      <!-- Menu -->
-     <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;font-size:60px;" id="our-menu"
-         data-aos="fade-down-left"> - our menu -
+     <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;" id="our-menu"
+         data-aos="fade-down-left">our menu
      </h1>
      <div id="menu" class="bg-light p-5 container-fluid">
          <div class="row ">
@@ -201,10 +205,9 @@ if (isset($_POST['submit'])) {
                  <div class="card text-center index-card">
                      <img src="./images/pizza-3.jpg" alt="" class="card-img-top">
                      <div class="card-body">
-                         <h5 class="card-title text-capitalize"> Sweet Pizza</h5>
+                         <h5 class="card-title text-capitalize">Sweet Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4  mb-3">
@@ -224,7 +227,6 @@ if (isset($_POST['submit'])) {
                          <h5 class="card-title  text-capitalize">Mushroom Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -269,9 +271,9 @@ if (isset($_POST['submit'])) {
          </div>
      </div>
      </div>
-     <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; font-size:60px;"
-         data-aos="fade-down" id="blog">
-         - Blog - </h1>
+     <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; " data-aos="fade-down"
+         id="blog">
+         Blog </h1>
      <div class="bg-light blog">
          <div class="blog-container container-fluid py-3 px-4">
              <h4 class="blog-container__title my-3 text-secondary" style="font-weight:900">Different Pizza Types For
@@ -364,8 +366,7 @@ if (isset($_POST['submit'])) {
                          <p class="text-capitalize fst-italic fw-light"
                              style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">meet
                              exprets</p>
-                         <h1 class="text-uppercase font-weight-bold"
-                             style="letter-spacing:3px; font-weight:900; font-size:60px;">our
+                         <h1 class="text-uppercase font-weight-bold" style="letter-spacing:3px; font-weight:900;">our
                              best chef</h1>
                      </div>
                  </div>
@@ -416,8 +417,8 @@ if (isset($_POST['submit'])) {
      </section>
 
 
-     <h1 class="review-title text-uppercase text-center my-5"
-         style="font-weight:900; letter-spacing:3px; font-size:60px;" id="review-title" data-aos="fade-up">- review -
+     <h1 class="review-title text-uppercase text-center my-5" style="font-weight:900; letter-spacing:3px;"
+         id="review-title" data-aos="fade-up">review
      </h1>
      <div id="review" class="container-fluid review-container bg-light p-5">
          <div class=" slide p-5 mb-4" data-aos="fade-right">
