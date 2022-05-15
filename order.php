@@ -116,5 +116,33 @@
 <script src='./script.js'>
 
 </script>
-
+<script>
+    // function existShoppingCart(items) {
+    //     var cartRow = document.createElement("div");
+    //     cartRow.classList.add("cart-row");
+    //     var cartItems = document.getElementsByClassName("cart-items")[0];
+    //     for(var i = 0; i < items.length; i++) {
+    //         var text = `
+    //         <div class="cart-item cart-column">
+    //             <img class="cart-item-image" src="${items[i][0]}" width="100" height="100">
+    //             <span class="cart-item-title">${items[i][1]}</span>
+    //         </div>
+    //         <span class="cart-price cart-column">${items[i][2]}</span>
+    //         <div class="cart-quantity cart-column">
+    //             <input class="cart-quantity-input" type="number" value="1">
+    //             <button class="btn btn-danger" type="button">REMOVE</button>
+    //         </div>`;
+    //         cartRow.innerHTML = text;
+    //         cartItems.append(cartRow);
+    //         cartRow
+    //         .getElementsByClassName("btn-danger")[0]
+    //         .addEventListener("click", removeCartItem);
+    //         cartRow
+    //         .getElementsByClassName("cart-quantity-input")[0]
+    //         .addEventListener("change", quantityChanged);
+    //     }
+    // }
+    //var items = localStorage.getItem('cart'); 
+    //existShoppingCart(items);
+</script>
 </html>

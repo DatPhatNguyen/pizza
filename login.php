@@ -44,9 +44,8 @@ if (isset($_POST['submit'])) {
             $_SESSION['username'] = $row['username'];
             echo '<script type="text/JavaScript">
             localStorage.setItem("name", "logined");
-            alert(localStorage.getItem("name"));
             </script>';
-            header('location: ./index.php');
+            echo '<script>window.location = "./order.php";</script>';
         } else {
             $errorMessage = "Invalid Username or Password!";
         }
@@ -121,12 +120,5 @@ if (isset($_GET["error"])) {
 
 
     <?php include './template/footer.php'?>
-<script>
-    if(typeof(localStorage) !== "undefined") {
-        localStorage.clear();
-        //localStorage.setItem("name", "logined");
-    }
-    alert(localStorage.getItem('name'));
-</script>
 </body>
 
