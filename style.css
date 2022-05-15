@@ -105,6 +105,15 @@ textarea {
 .add-title {
   margin-top: 8rem;
 }
+.login-form,
+.registration-form {
+  padding: 20px;
+  max-width: 600px;
+  margin: 6rem auto;
+  border: 1px solid #999;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px black;
+}
 .add-form {
   max-width: 560px;
   margin: 20px auto;
@@ -172,22 +181,13 @@ header {
   }
 }
 @media (min-width: 769px) and (max-width: 1294px) {
-
-
-  .acc-not{
+  .acc-not {
     display: block;
   }
-
   .acc {
     display: none;
   }
 
-  
-
-  .login-form,
-  .register-form {
-    min-width: 50%;
-  }
   .header .header-right {
     position: absolute;
     top: 99%;
@@ -205,30 +205,24 @@ header {
     text-align: center;
     display: block;
     margin: 20px;
-    
   }
   .header .bar {
     display: block;
-    
   }
 }
 @media (max-width: 768px) {
-
-  .acc {
+  .acc,
+  .acc-logout {
     display: none;
   }
-
-  .acc-not{
+  .acc-not {
     display: block;
   }
 
   h1 {
     font-size: 45px;
   }
-  .login-form,
-  .register-form {
-    width: 75%;
-  }
+
   .header .header-right {
     position: absolute;
     top: 99%;
@@ -252,21 +246,16 @@ header {
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
-
-  .acc {
+  .acc,
+  .acc-logout {
     display: none;
   }
-
-  .acc-not{
+  .acc-not {
     display: block;
   }
 
   h1 {
     font-size: 45px;
-  }
-  .login-form,
-  .register-form {
-    width: 80%;
   }
   .footer-row {
     margin-left: 20px;

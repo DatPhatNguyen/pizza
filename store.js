@@ -12,29 +12,25 @@ function ready() {
     var button = removeCartItemButtons[i];
     button.addEventListener("click", removeCartItem);
   }
-
   var quantityInputs = document.getElementsByClassName("cart-quantity-input");
   for (var i = 0; i < quantityInputs.length; i++) {
     var input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
   }
-
   var addToCartButtons = document.getElementsByClassName("shop-item-button");
   for (var i = 0; i < addToCartButtons.length; i++) {
     var button = addToCartButtons[i];
     button.addEventListener("click", addToCartClicked);
   }
-
   document
     .getElementsByClassName("btn-purchase")[0]
     .addEventListener("click", purchaseClicked);
 }
-
 function purchaseClicked() {
-  var user = localStorage.getItem('name');
+  var user = localStorage.getItem("name");
   if (user === "logined") {
-    if(getTotal() === '$0') {
-      alert('There is no pizza in your shopping cart!');
+    if (getTotal() === "$0") {
+      alert("There is no pizza in your shopping cart!");
       return;
     }
     var conf = confirm("confirm the purchase " + getTotal() + "?");
@@ -46,10 +42,8 @@ function purchaseClicked() {
       }
       updateCartTotal();
     }
-
-    
   } else {
-    window.location = './login.php';
+    window.location = "./login.php";
   }
 }
 
@@ -77,12 +71,10 @@ function addToCartClicked(event) {
   updateCartTotal();
 }
 
-
-
 function addItemToCart(title, price, imageSrc) {
-  var islogined = localStorage.getItem('name');
-  if(islogined !== 'logined') {
-    window.location = './login.php';
+  var islogined = localStorage.getItem("name");
+  if (islogined !== "logined") {
+    window.location = "./login.php";
   }
   var cartRow = document.createElement("div");
   cartRow.classList.add("cart-row");
@@ -91,10 +83,10 @@ function addItemToCart(title, price, imageSrc) {
   for (var i = 0; i < cartItemNames.length; i++) {
     if (cartItemNames[i].innerText == title) {
       //alert("This item is already added to the cart");
-      var quan = document.getElementsByClassName('cart-quantity-input')[i];
+      var quan = document.getElementsByClassName("cart-quantity-input")[i];
       var val = quan.value;
       val++;
-      quan.setAttribute('value', val);
+      quan.setAttribute("value", val);
       return;
     }
   }
@@ -116,11 +108,11 @@ function addItemToCart(title, price, imageSrc) {
   cartRow
     .getElementsByClassName("cart-quantity-input")[0]
     .addEventListener("change", quantityChanged);
-    // var item = [imageSrc, title, price];
-    // items.add(item);
-    //console.log(items[0]);
-    // localStorage.removeItem('cart');
-    // localStorage.setItem('cart', items);
+  // var item = [imageSrc, title, price];
+  // items.add(item);
+  //console.log(items[0]);
+  // localStorage.removeItem('cart');
+  // localStorage.setItem('cart', items);
 }
 
 // function existShoppingCart() {
@@ -172,9 +164,8 @@ function updateCartTotal() {
 }
 
 function getTotal() {
-  return document.getElementsByClassName("cart-total-price")[0].innerText
+  return document.getElementsByClassName("cart-total-price")[0].innerText;
 }
-
 
 // function getCartRow() {
 //   return cartItemContainer.getElementsByClassName("cart-row").length;

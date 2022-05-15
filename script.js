@@ -16,4 +16,7 @@ $(document).ready(function () {
       }
     }
   });
+  $(".card-img-top").click(function () {
+    location.href = "./order.php";
+  });
 });

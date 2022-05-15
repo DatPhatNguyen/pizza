@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
             echo '<script type="text/JavaScript">
             localStorage.setItem("name", "logined");
             </script>';
-            echo '<script>window.location = "./order.php";</script>';
+            echo '<script>window.location = "./index.php";</script>';
         } else {
             $errorMessage = "Invalid Username or Password!";
         }
@@ -64,7 +64,6 @@ mysqli_close($conn);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -107,7 +106,10 @@ if (isset($errorMessage)) {
                 <a href="registration.php" class="text-primary">Registration</a>
             </div>
         </form>
-        <?php
+    </div>
+
+
+    <!-- <?php
 if (isset($_GET["error"])) {
     if ($_GET['error'] == "emptyinput") {
         echo "<p>Fill in all fields!</p>";
@@ -115,10 +117,6 @@ if (isset($_GET["error"])) {
         echo "<p>Incorrect login information</p>";
     }
 }
-?>
-    </div>
-
-
+?> -->
     <?php include './template/footer.php'?>
 </body>
-

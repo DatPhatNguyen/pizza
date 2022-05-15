@@ -22,7 +22,7 @@
                     class="text-capitalize font-weight-bold">Pizza</span>
             </a>
             <div class="header-right" id="nav">
-                <a href="add.php" class="text-decoration-none  text-muted text-capitalize">add pizza</a>
+                <a href="add.php" class="text-decoration-none  text-muted text-capitalize">make your pizza</a>
                 <a href="#our-menu" class="text-decoration-none header text-capitalize text-muted">Menu</a>
                 <a href="#blog" class="text-decoration-none   header text-capitalize text-muted">Blog</a>
                 <a href="#review-title" class="text-decoration-none  header text-capitalize text-muted">Review</a>
@@ -40,19 +40,19 @@
                     style="color:white;background: #10ac84; border-radius:20px; padding:8px 14px;">Order</a> -->
                 <!-- <a href="registration.php" class="text-decoration-none text-muted header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user" style="margin-right:10px;"></i>Registration</a> -->
-            
-                        
-                        <?php
-                            if (isset($_SESSION['username'])) {
-                                echo "<img src='./images/user.jpg' width='40' height='40' style='position: absolute; right: 100px; top: 10px;' class='text-decoration-none  text-muted header text-capitalize acc'/>";
-                                echo "<a href='./logout.php' style='font-size:20px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header acc'>Log out</a>";
-                            } else {
-                                echo "<a href='./login.php' style='font-size:25px; position: absolute; right: 120px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Log In</a>";
-                                echo "<a href='./registration.php' style='font-size:25px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Register</a>";
-                            }
-                        ?>                                        
-               
-                
+
+
+                <?php
+if (isset($_SESSION['username'])) {
+    echo "<img src='./images/user.jpg' width='40' height='40' style='position: absolute; right: 100px; top: 50%; transform:translateY(-50%);' class='text-decoration-none  text-muted header text-capitalize acc'/>";
+    echo "<a href='./logout.php' style='font-size:25px; position: absolute; right: 0px; ' class='text-decoration-none  text-muted header text-capitalize acc-logout'>Log out</a>";
+} else {
+    echo "<a href='./login.php' style='font-size:25px; position: absolute; right: 120px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Log In</a>";
+    echo "<a href='./registration.php' style='font-size:25px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Register</a>";
+}
+?>
+
+
                 <!-- <a href="login.php" class="text-decoration-none text-danger header text-capitalize"
                     style="font-size:25px;"><i class="fa-solid fa-user " style="margin-right:10px;"></i>Login</a> -->
             </div>

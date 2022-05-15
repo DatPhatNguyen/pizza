@@ -14,83 +14,102 @@
 
 <body>
     <?php
-    session_start();
-    include './template/header.php';
-    ?>;
+session_start();
+include './template/header.php';
+?>;
 
     <section class="container content-section">
         <h2 class="section-header">Order</h2>
         <div class="shop-items row text-center">
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Cheese Pizza</span>
-                <img class="shop-item-image" src="./images/pizza-1.jpg">
-                <div class="shop-item-details ">
-                    <span class="shop-item-price">$12.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Cheese Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-1.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Indian Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-2.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Indian Pizza</span>
-                <img class="shop-item-image" src="./images/pizza-2.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$14.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Sweet Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-3.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Sweet Pizza</span>
-                <img class="shop-item-image" src="./images/pizza-3.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$9.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Vegetarian Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-4.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Vegetarian Pizza</span>
-                <img class="shop-item-image" src="./images/pizza-4.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Mushroom Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-5.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Mushroom Pizza</span>
-                <img class="shop-item-image" src="./images/pizza-5.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Cheese Sauce Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-6.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Cheese Sauce Pizza</span>
-                <img class="shop-item-image" src="./images/pizza-6.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Squid Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-7.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">squid pizza</span>
-                <img class="shop-item-image" src="./images/pizza-7.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Vegetable Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-8.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">vegetable pizza</span>
-                <img class="shop-item-image" src="./images/pizza-8.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4">
-                <span class="shop-item-title">Cheese mushroom pizza</span>
-                <img class="shop-item-image" src="./images/pizza-9.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <div class="shop-item col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <span class="shop-item-title">Cheese Mushroom Pizza</span>
+                    <img class="shop-item-image mb-3" src="./images/pizza-9.jpg" style="width:80%; margin: 0 auto;">
+                    <div class="shop-item-details card-footer p-2">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,32 +136,33 @@
 
 </script>
 <script>
-    // function existShoppingCart(items) {
-    //     var cartRow = document.createElement("div");
-    //     cartRow.classList.add("cart-row");
-    //     var cartItems = document.getElementsByClassName("cart-items")[0];
-    //     for(var i = 0; i < items.length; i++) {
-    //         var text = `
-    //         <div class="cart-item cart-column">
-    //             <img class="cart-item-image" src="${items[i][0]}" width="100" height="100">
-    //             <span class="cart-item-title">${items[i][1]}</span>
-    //         </div>
-    //         <span class="cart-price cart-column">${items[i][2]}</span>
-    //         <div class="cart-quantity cart-column">
-    //             <input class="cart-quantity-input" type="number" value="1">
-    //             <button class="btn btn-danger" type="button">REMOVE</button>
-    //         </div>`;
-    //         cartRow.innerHTML = text;
-    //         cartItems.append(cartRow);
-    //         cartRow
-    //         .getElementsByClassName("btn-danger")[0]
-    //         .addEventListener("click", removeCartItem);
-    //         cartRow
-    //         .getElementsByClassName("cart-quantity-input")[0]
-    //         .addEventListener("change", quantityChanged);
-    //     }
-    // }
-    //var items = localStorage.getItem('cart'); 
-    //existShoppingCart(items);
+// function existShoppingCart(items) {
+//     var cartRow = document.createElement("div");
+//     cartRow.classList.add("cart-row");
+//     var cartItems = document.getElementsByClassName("cart-items")[0];
+//     for(var i = 0; i < items.length; i++) {
+//         var text = `
+//         <div class="cart-item cart-column">
+//             <img class="cart-item-image" src="${items[i][0]}" width="100" height="100">
+//             <span class="cart-item-title">${items[i][1]}</span>
+//         </div>
+//         <span class="cart-price cart-column">${items[i][2]}</span>
+//         <div class="cart-quantity cart-column">
+//             <input class="cart-quantity-input" type="number" value="1">
+//             <button class="btn btn-danger" type="button">REMOVE</button>
+//         </div>`;
+//         cartRow.innerHTML = text;
+//         cartItems.append(cartRow);
+//         cartRow
+//         .getElementsByClassName("btn-danger")[0]
+//         .addEventListener("click", removeCartItem);
+//         cartRow
+//         .getElementsByClassName("cart-quantity-input")[0]
+//         .addEventListener("change", quantityChanged);
+//     }
+// }
+//var items = localStorage.getItem('cart');
+//existShoppingCart(items);
 </script>
+
 </html>
