@@ -1,56 +1,56 @@
  <?php
-    session_start();
-	include('config/db_connect.php');
-	$email = $title = $ingredients = '';
-	$errors = array('email' => '', 'title' => '', 'ingredients' => '');
-	if(isset($_POST['submit'])){
-		// check email
-		if(empty($_POST['email'])){
-			$errors['email'] = 'An email is required';
-		} else{
-			$email = $_POST['email'];
-			if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-				$errors['email'] = 'Email must be a valid email address';
-			}
-		}
-		// check title
-		if(empty($_POST['title'])){
-			$errors['title'] = 'A title is required';
-		} else{
-			$title = $_POST['title'];
-			if(!preg_match('/^[a-zA-Z\s]+$/', $title)){
-				$errors['title'] = 'Title must be letters and spaces only';
-			}
-		}
-		// check ingredients
-		if(empty($_POST['ingredients'])){
-			$errors['ingredients'] = 'At least one ingredient is required';
-		} else{
-			$ingredients = $_POST['ingredients'];
-			if(!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)){
-				$errors['ingredients'] = 'Ingredients must be a comma separated list';
-			}
-		}
-		if(array_filter($errors)){
-			//echo 'errors in form';
-		} else {
-			// escape sql chars
-			$email = mysqli_real_escape_string($conn, $_POST['email']);
-			$title = mysqli_real_escape_string($conn, $_POST['title']);
-			$ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
+session_start();
+include 'config/db_connect.php';
+$email = $title = $ingredients = '';
+$errors = array('email' => '', 'title' => '', 'ingredients' => '');
+if (isset($_POST['submit'])) {
+    // check email
+    if (empty($_POST['email'])) {
+        $errors['email'] = 'An email is required';
+    } else {
+        $email = $_POST['email'];
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errors['email'] = 'Email must be a valid email address';
+        }
+    }
+    // check title
+    if (empty($_POST['title'])) {
+        $errors['title'] = 'A title is required';
+    } else {
+        $title = $_POST['title'];
+        if (!preg_match('/^[a-zA-Z\s]+$/', $title)) {
+            $errors['title'] = 'Title must be letters and spaces only';
+        }
+    }
+    // check ingredients
+    if (empty($_POST['ingredients'])) {
+        $errors['ingredients'] = 'At least one ingredient is required';
+    } else {
+        $ingredients = $_POST['ingredients'];
+        if (!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)) {
+            $errors['ingredients'] = 'Ingredients must be a comma separated list';
+        }
+    }
+    if (array_filter($errors)) {
+        //echo 'errors in form';
+    } else {
+        // escape sql chars
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $title = mysqli_real_escape_string($conn, $_POST['title']);
+        $ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
 
-			// create sql
-			$sql = "INSERT INTO pizzas(title,email,ingredients) VALUES('$title','$email','$ingredients')";
+        // create sql
+        $sql = "INSERT INTO pizzas(title,email,ingredients) VALUES('$title','$email','$ingredients')";
 
-			// save to db and check
-			if(mysqli_query($conn, $sql)){
-				// success
-				header('Location:index.php');
-			} else {
-				echo 'query error: '. mysqli_error($conn);
-			}
-		}
-	} // end POST check
+        // save to db and check
+        if (mysqli_query($conn, $sql)) {
+            // success
+            header('Location:index.php');
+        } else {
+            echo 'query error: ' . mysqli_error($conn);
+        }
+    }
+} // end POST check
 ?>
  <!DOCTYPE html>
  <html lang="en">
@@ -67,9 +67,9 @@
  </head>
 
  <body>
-     <?php include('./template/header.php'); ?>;
+     <?php include './template/header.php';?>;
      <section class="container secondary-text add-container mt-2">
-         <h1 class="text-center text-uppercase add-title">add your pizza</h1>
+         <h1 class="text-center text-uppercase add-title">create your style pizza</h1>
          <form action="add.php" method="POST" class="add-form">
              <div class="mb-3">
                  <label class="form-label font-weight-bold">Your Email:</label>
@@ -184,7 +184,7 @@
                          <h5 class="card-title text-capitalize">Cheese Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3" data-aos="fade-right">
@@ -194,7 +194,7 @@
                          <h5 class="card-title text-capitalize">Indian Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4  mb-3" data-aos="fade-right">
@@ -204,7 +204,7 @@
                          <h5 class="card-title text-capitalize"> Sweet Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4  mb-3">
@@ -214,7 +214,7 @@
                          <h5 class="card-title text-capitalize">Vegetarian Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -224,7 +224,7 @@
                          <h5 class="card-title  text-capitalize">Mushroom Pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -234,7 +234,7 @@
                          <h5 class="card-title  text-capitalize">Cheese Sauce Pizza </h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -253,7 +253,7 @@
                          <h5 class="card-title  text-capitalize">vegetable pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
              <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
@@ -263,7 +263,7 @@
                          <h5 class="card-title  text-capitalize">Cheese mushroom pizza</h5>
                          <div class="card-text"></div>
                      </div>
-                     
+
                  </div>
              </div>
          </div>
@@ -496,8 +496,8 @@
          </div>
      </div>
      <?php
-        include('./template/footer.php');
-    ?>
+include './template/footer.php';
+?>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
