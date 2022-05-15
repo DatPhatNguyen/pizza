@@ -172,17 +172,12 @@ header {
   }
 }
 @media (min-width: 769px) and (max-width: 1294px) {
-
-
-  .acc-not{
+  .acc-not {
     display: block;
   }
-
   .acc {
     display: none;
   }
-
-  
 
   .login-form,
   .register-form {
@@ -205,20 +200,17 @@ header {
     text-align: center;
     display: block;
     margin: 20px;
-    
   }
   .header .bar {
     display: block;
-    
   }
 }
 @media (max-width: 768px) {
-
   .acc {
     display: none;
   }
 
-  .acc-not{
+  .acc-not {
     display: block;
   }
 
@@ -252,12 +244,11 @@ header {
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
-
   .acc {
     display: none;
   }
 
-  .acc-not{
+  .acc-not {
     display: block;
   }
 

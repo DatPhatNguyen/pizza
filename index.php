@@ -67,7 +67,7 @@ mysqli_close($conn);
      </div>
      <!-- Order State -->
      <h1 class="text-uppercase text-center black-text my-5" style="font-weight:900; letter-spacing:3px; font-size:60px;"
-         data-aos="fade-down-right"> - Pizzas! -
+         data-aos="fade-down-right"> - Customer's pizzas! -
      </h1>
      <div class="container-fluid">
          <div class="row bg-light pt-2 pb-4 px-4">

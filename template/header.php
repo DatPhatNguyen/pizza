@@ -44,11 +44,11 @@
 
                 <?php
 if (isset($_SESSION['username'])) {
-    echo "<a href='./logout.php' style='font-size:20px; position: absolute; right: 0px;' class='text-decoration-none  text-muted  acc'>Log out</a>";
-    echo "<img src='./images/user.jpg' width='40' height='40' style='position: absolute; right: 100px; top: 10px;' class='text-decoration-none  text-muted  text-capitalize acc'/>";
+    echo "<a href='./logout.php' style='font-size:25px; position: absolute; right: 0px;' class='text-decoration-none  text-muted  acc d-flex- align-items-center'>Log out</a>";
+    echo "<img src='./images/user.jpg' width='40' height='40' style='position: absolute; right: 100px; top: 50%; line-height:40px ; transform: translateY(-50%);' class='text-decoration-none  text-muted  text-capitalize acc'/>";
 } else {
     echo "<a href='./login.php' style='font-size:25px; position: absolute; right: 120px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Log In</a>";
-    echo "<a href='./registration.php' style='font-size:25px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Register</a>";
+    echo "<a href='./registration.php' style='font-size:25px;  position: absolute; right: 0px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Register</a>";
 }
 ?>
 
