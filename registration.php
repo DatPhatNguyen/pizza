@@ -18,6 +18,8 @@ if (isset($_POST['submit'])) {
     $confirmPassword = strip_tags($confirmPassword);
     $confirmPassword = htmlspecialchars($password);
 
+    $password = md5($password);
+    $confirmPassword = md5($confirmPassword);
     if (empty($username)) {
         $error = true;
         $errorUsername = 'Please fill in username field..';
@@ -38,16 +40,34 @@ if (isset($_POST['submit'])) {
         $error = true;
         echo '<p>Password did not match! </p>';
     }
-    $password = md5($password);
+    // $password = md5($password);
+    $sqlEmail = "SELECT * FROM users WHERE email = '$email'";
+    $queryEmail = mysqli_query($conn, $sqlEmail);
+    $sql1 = "INSERT into users (username,email, password) values ('$username','$email','$password')";
+    if (mysqli_num_rows($queryEmail) > 0) {
+        $error = false;
+        echo '<script type="text/JavaScript">
+            alert("Email already use");
+        </script>';
+
+    }
     if (!$error) {
         $sql = "Insert into users (username,email,password) values ('$username','$email','$password')";
         if (mysqli_query($conn, $sql)) {
             $successMessage = 'Register successfully, <a href="./login.php" class="text-info">click here to Log In</a>';
-        } else {
-            echo 'Error: ' . mysqli_error($conn);
+        }
+        // } else if (!mysqli_query($conn, $sql)) {
+        //     $failRegisterMessage = 'Register failed, try again!'; }
+        // } else {
+        //     echo 'Error: ' . mysqli_error($conn);
+        // }
+        $sql = "Insert into users (username,email,password) values ('$username','$email','$password')";
+        if (mysqli_query($conn, $sql) === false) {
+            $failRegisterMessage = 'Register failed, try again!';
         }
     }
 }
+mysqli_close($conn);
 ?>
 
 
@@ -96,7 +116,6 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="registration.css">
 </head>
 
 <body>
@@ -113,6 +132,14 @@ if (isset($successMessage)) {
                 <?php echo $successMessage;
     ?>
             </div>
+            <?php
+}
+?>
+            <?php if (isset($failRegisterMessage)) {
+    ?>
+            <div class=" text-center alert alert-danger mb-2 mt-4  mx-auto" style="width:90%px; color:black;">
+                <?php echo $failRegisterMessage;
+    ?> </div>
             <?php
 }
 ?>
@@ -183,7 +210,7 @@ if (isset($successMessage)) {
 //     }
 // }
 // ?>
-    <?php include './template/footer.php'?>
+    <?php include './template/footer.php'?>;
 </body>
 
 </html>

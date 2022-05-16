@@ -66,8 +66,8 @@ mysqli_close($conn);
          </div>
      </div>
      <!-- Order State -->
-     <h1 class="text-uppercase text-center black-text my-5" style="font-weight:900; letter-spacing:3px; font-size:60px;"
-         data-aos="fade-down-right"> - Pizzas! -
+     <h1 class="text-uppercase text-center black-text my-5" style="font-weight:900; letter-spacing:3px;"
+         data-aos="fade-down-right"> Customer's pizza
      </h1>
      <div class="container-fluid">
          <div class="row bg-light pt-2 pb-4 px-4">
@@ -144,21 +144,21 @@ mysqli_close($conn);
                              <p class="text-capitalize fst-italic fw-light"
                                  style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">fresh from pizza</p>
                              <h1 class="text-uppercase font-weight-bold"
-                                 style="letter-spacing:3px; font-weight:900; font-size:60px;">our
-                                 speciality</h1>
+                                 style="letter-spacing:3px; font-weight:900; font-size:50px;">our
+                                 best</h1>
                          </div>
                      </div>
                  </div>
                  <div class="row px-4">
                      <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up">
                          <img src="./images/pizza-2.jpg"
-                             style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                             style="height:auto; width:80%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">indian pizza</p>
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="200">
                          <img src="./images/pizza-4.jpg"
-                             style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                             style="height:auto; width:80%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">vegetarian pizza
                          </p>
@@ -166,7 +166,7 @@ mysqli_close($conn);
                      </div>
                      <div class="col-xl-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in-up" data-aos-delay="400">
                          <img src="./images/pizza-6.jpg"
-                             style="height:300px; width:90%; border-radius:50%; cursor:pointer" class="speciality-image"
+                             style="height:auto; width:80%; border-radius:50%; cursor:pointer" class="speciality-image"
                              alt="">
                          <p class="text-capitalize my-4" style="font-weight:700; font-size:20px;">Cheese Sauce Pizza
                          </p>
@@ -176,8 +176,8 @@ mysqli_close($conn);
          </section>
 
          <!-- Menu -->
-         <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;font-size:60px;" id="our-menu"
-             data-aos="fade-down-left"> - our menu -
+         <h1 class="menu-title my-5 text-center text-uppercase" style="font-weight:900;" id="our-menu"
+             data-aos="fade-down-left">our menu
          </h1>
          <div id="menu" class="bg-light p-5 container-fluid">
              <div class="row ">
@@ -271,9 +271,9 @@ mysqli_close($conn);
              </div>
          </div>
      </div>
-     <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; font-size:60px;"
-         data-aos="fade-down" id="blog">
-         - Blog - </h1>
+     <h1 class="blog-title my-5 text-center" style="font-weight:900;letter-spacing:3px; " data-aos="fade-down"
+         id="blog">
+         Blog </h1>
      <div class="bg-light blog">
          <div class="blog-container container-fluid py-3 px-4">
              <h4 class="blog-container__title my-3 text-secondary" style="font-weight:900">Different Pizza Types For
@@ -366,8 +366,7 @@ mysqli_close($conn);
                          <p class="text-capitalize fst-italic fw-light"
                              style="font-size:26px; color:#fd9d3e; letter-spacing:3px;">meet
                              exprets</p>
-                         <h1 class="text-uppercase font-weight-bold"
-                             style="letter-spacing:3px; font-weight:900; font-size:60px;">our
+                         <h1 class="text-uppercase font-weight-bold" style="letter-spacing:3px; font-weight:900;">our
                              best chef</h1>
                      </div>
                  </div>
@@ -418,8 +417,8 @@ mysqli_close($conn);
      </section>
 
 
-     <h1 class="review-title text-uppercase text-center my-5"
-         style="font-weight:900; letter-spacing:3px; font-size:60px;" id="review-title" data-aos="fade-up">- review -
+     <h1 class="review-title text-uppercase text-center my-5" style="font-weight:900; letter-spacing:3px;"
+         id="review-title" data-aos="fade-up">review
      </h1>
      <div id="review" class="container-fluid review-container bg-light p-5">
          <div class=" slide p-5 mb-4" data-aos="fade-right">

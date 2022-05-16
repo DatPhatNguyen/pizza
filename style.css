@@ -113,6 +113,15 @@ textarea {
 .add-title {
   margin-top: 8rem;
 }
+.login-form,
+.registration-form {
+  padding: 20px;
+  max-width: 600px;
+  margin: 6rem auto;
+  border: 1px solid #999;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px black;
+}
 .add-form {
   max-width: 560px;
   margin: 20px auto;
@@ -183,9 +192,12 @@ header {
 
 
 @media (min-width: 769px) and (max-width: 1294px) {
+<<<<<<< HEAD
 
 
   
+=======
+>>>>>>> 69d790192c41e36bf31ebd44773c29480938d914
   .acc-not {
     display: block;
     position: absolute !important;
@@ -193,12 +205,19 @@ header {
     right: -100% !important;
     
   }
+<<<<<<< HEAD
   
 
   .login-form,
   .register-form {
     min-width: 50%;
   }
+=======
+  .acc {
+    display: none;
+  }
+
+>>>>>>> 69d790192c41e36bf31ebd44773c29480938d914
   .header .header-right {
     position: absolute;
     top: 99%;
@@ -216,25 +235,32 @@ header {
     text-align: center;
     display: block;
     margin: 20px;
-    
   }
   .header .bar {
     display: block;
-    
   }
+<<<<<<< HEAD
 
  
 
 }
 @media (max-width: 768px) {
+=======
+}
+@media (max-width: 768px) {
+  .acc,
+  .acc-logout {
+    display: none;
+  }
+  .acc-not {
+    display: block;
+  }
+>>>>>>> 69d790192c41e36bf31ebd44773c29480938d914
 
   h1 {
     font-size: 45px;
   }
-  .login-form,
-  .register-form {
-    width: 75%;
-  }
+
   .header .header-right {
     position: absolute;
     top: 99%;
@@ -260,21 +286,16 @@ header {
 
 }
 @media (min-width: 320px) and (max-width: 576px) {
-
-  .acc {
+  .acc,
+  .acc-logout {
     display: none;
   }
-
-  .acc-not{
+  .acc-not {
     display: block;
   }
 
   h1 {
     font-size: 45px;
-  }
-  .login-form,
-  .register-form {
-    width: 80%;
   }
   .footer-row {
     margin-left: 20px;
