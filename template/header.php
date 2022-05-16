@@ -44,11 +44,11 @@
                         
                         <?php
                             if (isset($_SESSION['username'])) {
-                                echo "<img src='./images/user.jpg' width='40' height='40' style='position: absolute; right: 100px; top: 10px;' class='text-decoration-none  text-muted header text-capitalize acc'/>";
-                                echo "<a href='./logout.php' style='font-size:20px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header acc'>Log out</a>";
+                                echo "<img src='./images/user.jpg' width='40' height='40'  class='text-decoration-none  text-muted header header-hide text-capitalize acc id='img-log'/>";
+                                echo "<a href='./logout.php' class='text-decoration-none  text-muted header acc' id='logout'>Log out</a>";
                             } else {
-                                echo "<a href='./login.php' style='font-size:25px; position: absolute; right: 120px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Log In</a>";
-                                echo "<a href='./registration.php' style='font-size:25px; position: absolute; right: 0px;' class='text-decoration-none  text-muted header text-capitalize acc acc-not'>Register</a>";
+                                echo "<a href='./login.php'  class='text-decoration-none  text-muted text-capitalize acc acc-not' id='login'>Log In</a>";
+                                echo "<a href='./registration.php' class='text-decoration-none  text-muted  text-capitalize acc acc-not' id='res'>Register</a>";
                             }
                         ?>                                        
                
@@ -67,5 +67,4 @@
     </header>
 </body>
 <script src="./script.js"></script>
-
 </html>

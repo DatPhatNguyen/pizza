@@ -3,6 +3,14 @@
 * {
   font-family: "Montserrat", "sans-serif";
 }
+
+#login, #logout, #res, #img-log {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  float: right;
+}
+
 h1 {
   font-size: 50px;
 }
@@ -167,21 +175,24 @@ header {
 /* ! Responsive */
 @media (min-width: 1300px) {
   .login-form,
-  .register-form {
-    width: 50%;
+  .registration-form {
+    max-width: 600px;
   }
 }
+
+
+
 @media (min-width: 769px) and (max-width: 1294px) {
 
 
-  .acc-not{
+  
+  .acc-not {
     display: block;
+    position: absolute !important;
+    top: -100% !important;
+    right: -100% !important;
+    
   }
-
-  .acc {
-    display: none;
-  }
-
   
 
   .login-form,
@@ -195,7 +206,7 @@ header {
     right: 0;
     background: #fff;
     border-top: 1px solid #000;
-    display: none;
+    /* display: none; */
     /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
   }
   /* .header .header-right.active {
@@ -211,16 +222,11 @@ header {
     display: block;
     
   }
+
+ 
+
 }
 @media (max-width: 768px) {
-
-  .acc {
-    display: none;
-  }
-
-  .acc-not{
-    display: block;
-  }
 
   h1 {
     font-size: 45px;
@@ -249,7 +255,9 @@ header {
   }
   .header .bar {
     display: block;
+    justify-self: center;
   }
+
 }
 @media (min-width: 320px) and (max-width: 576px) {
 
@@ -293,3 +301,4 @@ header {
     display: block;
   }
 }
+
