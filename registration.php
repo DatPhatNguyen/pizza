@@ -44,27 +44,27 @@ if (isset($_POST['submit'])) {
     $sqlEmail = "SELECT * FROM users WHERE email = '$email'";
     $queryEmail = mysqli_query($conn, $sqlEmail);
     $sql1 = "INSERT into users (username,email, password) values ('$username','$email','$password')";
-    if (mysqli_num_rows($queryEmail) > 0 && mysqli_query($conn, $sql1) === false) {
+    if (mysqli_num_rows($queryEmail) > 0) {
         $error = false;
         echo '<script type="text/JavaScript">
             alert("Email already use");
         </script>';
-        $failRegisterMessage = 'Register failed, try again!';
+
     }
     if (!$error) {
         $sql = "Insert into users (username,email,password) values ('$username','$email','$password')";
         if (mysqli_query($conn, $sql)) {
             $successMessage = 'Register successfully, <a href="./login.php" class="text-info">click here to Log In</a>';
-            // } else if (!mysqli_query($conn, $sql)) {
-            //     $failRegisterMessage = 'Register failed, try again!'; }
-        } else {
-            echo 'Error: ' . mysqli_error($conn);
         }
+        // } else if (!mysqli_query($conn, $sql)) {
+        //     $failRegisterMessage = 'Register failed, try again!'; }
         // } else {
-        //     $sql = "Insert into users (username,email,password) values ('$username','$email','$password')";
-        //     if (mysqli_query($conn, $sql) === false) {
-        //         $failRegisterMessage = 'Register failed, try again!';
-        //     }
+        //     echo 'Error: ' . mysqli_error($conn);
+        // }
+        $sql = "Insert into users (username,email,password) values ('$username','$email','$password')";
+        if (mysqli_query($conn, $sql) === false) {
+            $failRegisterMessage = 'Register failed, try again!';
+        }
     }
 }
 mysqli_close($conn);
